@@ -139,11 +139,16 @@ Includes Future Churners Prediction, risk customers(who are likely to churn in u
 │
 ├── notebooks/                  # Jupyter notebooks
 │   ├── Churn_Prediction.ipynb
+│
 ├── Dataset/                    # Used Dataset
 │   ├──Original_dataset.csv
 │   ├──Prediction.csv
+│
 ├── dashboard/                  # Power BI dashboard file
 │   └── vendor_performance_dashboard.pbix
+│
+├── Project Link/               # Dashboard Link
+    └── link
 
 ```
 
