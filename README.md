@@ -13,7 +13,7 @@ Learning](https://img.shields.io/badge/ML-Classification-green)]()\
 Telecom companies lose millions due to customer churn. This end-to-end
 project predicts which customers are most likely to leave. This project
 main goal is to create an entire ETL process in a database & a Power BI dashboard
-to utilize the Customer Data and acheive below goals:
+to utilize the Customer Data and achieve below goals:
 
 
 -   **Analyze Customer Data** → Demographic,Geographic,Payment & Account Info,Services
@@ -84,9 +84,10 @@ Telecom Customer Churn dataset includes
 <img width="661" height="596" alt="image" src="https://github.com/user-attachments/assets/5721e381-f87c-417d-8ab0-dcbfbc0bf423" />
 
 Loading the data from the source file. For this purpose, we are using Microsoft SQL Server(Data Warehouse) as it is widely used for solutions across the industry, and  because a full-fledged database system is better at handling recurring data loads and maintaining data integrity compared to an Excel file.
-# ** Steps **
+#### ** Steps **
 Create Database/ Create Table/ Load Data
-Extraction of data, performing data cleaning, transformation, and feature engineering.
+
+- Extraction of data, performing data cleaning, transformation, and feature engineering.
 
 ### **2️⃣ Exploratory Data Analysis**
 
@@ -128,7 +129,10 @@ Includes Future Churners Prediction, risk customers(who are likely to churn in u
 -   Improve fiber optic service quality
 
 ## 📁 **Project Structure**
+---
 
+
+```
 📦 Telecom-Churn-Prediction
 ├── README.md
 ├── Churn_Prediction_Report.pdf
@@ -140,6 +144,8 @@ Includes Future Churners Prediction, risk customers(who are likely to churn in u
 │   ├──Prediction.csv
 ├── dashboard/                  # Power BI dashboard file
 │   └── vendor_performance_dashboard.pbix
+
+```
 
 ## 🚀 **How to Run the Project**
 
