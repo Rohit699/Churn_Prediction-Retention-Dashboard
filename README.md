@@ -98,4 +98,4 @@ Example model scores (replace with your own):
 ## 📬 **Contact**
 
 **Rohit Gupta**\
-LinkedIn: *your link here*
+LinkedIn: *https://www.linkedin.com/in/rohitgupta0079/*
