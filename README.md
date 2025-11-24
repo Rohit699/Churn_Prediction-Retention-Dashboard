@@ -83,22 +83,25 @@ Telecom Customer Churn dataset includes
 ### **1️⃣ Data Preparation (SQL Server)**
 <img width="661" height="596" alt="image" src="https://github.com/user-attachments/assets/5721e381-f87c-417d-8ab0-dcbfbc0bf423" />
 
+Loading the data from the source file. For this purpose, we are using Microsoft SQL Server(Data Warehouse) as it is widely used for solutions across the industry, and  because a full-fledged database system is better at handling recurring data loads and maintaining data integrity compared to an Excel file.
+# ** Steps **
+Create Database/ Create Table/ Load Data
 Extraction of data, performing data cleaning, transformation, and feature engineering.
 
 ### **2️⃣ Exploratory Data Analysis**
 
-Analyzed churn drivers and customer behavior.
+Analyzed the columns, ie, Strength, demographics, geographics, services, churn drivers, and customer behavior.
 
 ### **3️⃣ Power BI Dashboard**
 
-Includes churn summary, demographics, billing insights, and service
-patterns.
+Includes Churn Analysis summary, demographics, billing insights, service
+patterns, and churn rate on different parameters.
 
 ### **4️⃣ Machine Learning Model**
 
 Tested the machine learning model, i.e, Random Forest to predict future churners
 
-Example model scores (replace with your own):
+Random Forest model scores :
 
   Metric      Score
   ----------- ---------
@@ -107,6 +110,9 @@ Example model scores (replace with your own):
   Recall      **94%**
   F1 Score    **90%**
 
+### **5️⃣ Churn Prediction Power BI Dashboard**
+
+Includes Future Churners Prediction, risk customers(who are likely to churn in upcoming future),and churn number based on different parameters.
 ## 🧠 **Key Insights**
 
 -   High monthly charges strongly correlate with churn\
@@ -123,11 +129,17 @@ Example model scores (replace with your own):
 
 ## 📁 **Project Structure**
 
-    📦 Telecom-Churn-Prediction
-    │── Dashboard/Churn_Analysis.pbix
-    │── Dataset/Prediction.csv
-    │── Notebook/Churn_Prediction.ipynb
-    │── README.md
+📦 Telecom-Churn-Prediction
+├── README.md
+├── Churn_Prediction_Report.pdf
+│
+├── notebooks/                  # Jupyter notebooks
+│   ├── Churn_Prediction.ipynb
+├── Dataset/                    # Used Dataset
+│   ├──Original_dataset.csv
+│   ├──Prediction.csv
+├── dashboard/                  # Power BI dashboard file
+│   └── vendor_performance_dashboard.pbix
 
 ## 🚀 **How to Run the Project**
 
