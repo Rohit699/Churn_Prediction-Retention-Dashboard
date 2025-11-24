@@ -1,200 +1,162 @@
-📘 README – Telecom Customer Churn Prediction Analysis
-📊 Project Overview
 
-Customer churn is one of the biggest challenges in the telecom industry. This project focuses on analyzing telecom customer behavior, identifying churn patterns, and building a machine-learning model to predict which customers are most likely to leave.
-
-The project combines SQL (data extraction & cleaning), Power BI (data visualization & dashboarding), and Machine Learning (churn prediction) to provide a complete end-to-end data analysis workflow.
-
-🗂️ Tech Stack
-
-SQL – Data cleaning, transformation, and feature preparation
-
-Power BI – Interactive dashboards for churn insights
-
-Python (Machine Learning) – Predictive modeling using scikit-learn
-
-Pandas, NumPy, Matplotlib, Seaborn
-
-Jupyter Notebook
-
-📁 Dataset
-
-Telecom Customer Churn dataset, containing:
-
-Customer demographics
-
-Subscription & service usage patterns
-
-Billing details
-
-Contract and tenure information
-
-Churn label (Yes/No)
-
-Typical columns include:
-customerID, gender, tenure, MonthlyCharges, TotalCharges, Contract, PaymentMethod, InternetService, TechSupport, Churn etc.
-
-🔧 Project Workflow
-1️⃣ Data Extraction & Cleaning (SQL)
-
-Imported raw telecom data into SQL database
-
-Performed:
-
-Removing duplicates
-
-Handling missing values
-
-Fixing datatype inconsistencies (e.g., TotalCharges)
-
-Creating new features such as tenure groups
-
-Queried and exported cleaned dataset into Power BI and Python for modeling
-
-2️⃣ Exploratory Data Analysis (EDA)
-
-Using SQL + Python:
-
-Distribution analysis of churn vs non-churn customers
-
-Identified churn-driving factors:
-
-Contract type
-
-Monthly charges
-
-Tenure
-
-Internet service type
-
-Technical support availability
-
-Correlation heatmaps & feature importance checks
-
-3️⃣ Power BI Dashboard
-
-Created an interactive dashboard with:
-
-📈 Churn summary
-
-👨‍💼 Customer demographics
-
-📡 Service usage patterns
-
-💳 Billing & payment behavior
-
-🚨 High-risk customer segments
-
-Users can filter by gender, contract type, region, service type, and more.
-
-4️⃣ Machine Learning Model
-
-Built a churn prediction model using Python:
-
-Models Tested
-
-Logistic Regression
-
-Random Forest
-
-XGBoost
-
-Decision Tree
-
-Support Vector Machine
-
-Best Model Performance
-
-(Example, replace with your actual score)
-
-Accuracy: 0.82
-
-Precision: 0.79
-
-Recall: 0.74
-
-F1 Score: 0.76
-
-Key Features Influencing Churn
-
-Monthly Charges
-
-Contract Type
-
-Tenure
-
-Total Charges
-
-Tech Support availability
-
-Internet Service Type
-
-📦 Project Structure
-│── README.md  
-│── data/  
-│   └── telecom_churn_dataset.csv  
-│── sql/  
-│   └── churn_cleaning_queries.sql  
-│── powerbi/  
-│   └── churn_dashboard.pbix  
-│── machine_learning/  
-│   └── churn_model.ipynb  
-│── images/  
-│   └── dashboard_screenshot.png
-
-🚀 How to Run the Project
-Prerequisites
-
-Python 3.8+
-
-Power BI Desktop
-
-MySQL / PostgreSQL / SQL Server
-
-Required Python libraries:
-
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost
-
-Steps
-
-Import dataset into SQL database
-
-Run SQL cleaning queries
-
-Export cleaned data
-
-Load dataset into Power BI → create visuals
-
-Run Jupyter Notebook → train and evaluate model
-
-Use the predictions CSV for business insights
-
-📊 Power BI Dashboard Preview
-
-(Add screenshot image in repo under /images)
-
-🧠 Key Insights
-
-Majority of churn customers are on month-to-month contracts
-
-High monthly charges strongly correlate with churn
-
-Customers without tech support churn more
-
-Long-tenured customers have much lower churn rates
-
-🏆 Business Recommendations
-
-Offer discounts for high monthly charge customers
-
-Push customers toward yearly contracts
-
-Provide proactive technical support
-
-Create retention campaigns for at-risk groups
-
-📬 Contact
-
-Rohit Gupta
-LinkedIn: add your link here
-Email: (optional)
+# 🧾 Vendor Performance Analysis – Retail Inventory & Sales
+
+_Analyzing vendor efficiency and profitability to support strategic purchasing and inventory decisions using SQL, Python, and Power BI._
+
+---
+
+## 📌 Table of Contents
+- <a href="#overview">Overview</a>
+- <a href="#business-problem">Business Problem</a>
+- <a href="#dataset">Dataset</a>
+- <a href="#tools--technologies">Tools & Technologies</a>
+- <a href="#project-structure">Project Structure</a>
+- <a href="#data-cleaning--preparation">Data Cleaning & Preparation</a>
+- <a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
+- <a href="#research-questions--key-findings">Research Questions & Key Findings</a>
+- <a href="#dashboard">Dashboard</a>
+- <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#final-recommendations">Final Recommendations</a>
+- <a href="#author--contact">Author & Contact</a>
+
+---
+<h2><a class="anchor" id="overview"></a>Overview</h2>
+
+This project evaluates vendor performance and retail inventory dynamics to drive strategic insights for purchasing, pricing, and inventory optimization. A complete data pipeline was built using SQL for ETL, Python for analysis and hypothesis testing, and Power BI for visualization.
+
+---
+<h2><a class="anchor" id="business-problem"></a>Business Problem</h2>
+
+Effective inventory and sales management are critical in the retail sector. This project aims to:
+- Identify underperforming brands needing pricing or promotional adjustments
+- Determine vendor contributions to sales and profits
+- Analyze the cost-benefit of bulk purchasing
+- Investigate inventory turnover inefficiencies
+- Statistically validate differences in vendor profitability
+
+---
+<h2><a class="anchor" id="dataset"></a>Dataset</h2>
+
+- Multiple CSV files located in `/data/` folder (sales, vendors, inventory)
+- Summary table created from ingested data and used for analysis
+
+---
+
+<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
+
+- SQL (Common Table Expressions, Joins, Filtering)
+- Python (Pandas, Matplotlib, Seaborn, SciPy)
+- Power BI (Interactive Visualizations)
+- GitHub
+
+---
+<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
+
+```
+vendor-performance-analysis/
+│
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── Vendor Performance Report.pdf
+│
+├── notebooks/                  # Jupyter notebooks
+│   ├── exploratory_data_analysis.ipynb
+│   ├── vendor_performance_analysis.ipynb
+│
+├── scripts/                    # Python scripts for ingestion and processing
+│   ├── ingestion_db.py
+│   └── get_vendor_summary.py
+│
+├── dashboard/                  # Power BI dashboard file
+│   └── vendor_performance_dashboard.pbix
+```
+
+---
+<h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
+
+- Removed transactions with:
+  - Gross Profit ≤ 0
+  - Profit Margin ≤ 0
+  - Sales Quantity = 0
+- Created summary tables with vendor-level metrics
+- Converted data types, handled outliers, merged lookup tables
+
+---
+<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Exploratory Data Analysis (EDA)</h2>
+
+**Negative or Zero Values Detected:**
+- Gross Profit: Min -52,002.78 (loss-making sales)
+- Profit Margin: Min -∞ (sales at zero or below cost)
+- Unsold Inventory: Indicating slow-moving stock
+
+**Outliers Identified:**
+- High Freight Costs (up to 257K)
+- Large Purchase/Actual Prices
+
+**Correlation Analysis:**
+- Weak between Purchase Price & Profit
+- Strong between Purchase Qty & Sales Qty (0.999)
+- Negative between Profit Margin & Sales Price (-0.179)
+
+---
+<h2><a class="anchor" id="research-questions--key-findings"></a>Research Questions & Key Findings</h2>
+
+1. **Brands for Promotions**: 198 brands with low sales but high profit margins
+2. **Top Vendors**: Top 10 vendors = 65.69% of purchases → risk of over-reliance
+3. **Bulk Purchasing Impact**: 72% cost savings per unit in large orders
+4. **Inventory Turnover**: $2.71M worth of unsold inventory
+5. **Vendor Profitability**:
+   - High Vendors: Mean Margin = 31.17%
+   - Low Vendors: Mean Margin = 41.55%
+6. **Hypothesis Testing**: Statistically significant difference in profit margins → distinct vendor strategies
+
+---
+<h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
+
+- Power BI Dashboard shows:
+  - Vendor-wise Sales and Margins
+  - Inventory Turnover
+  - Bulk Purchase Savings
+  - Performance Heatmaps
+
+![Vendor Performance Dashboard]<img width="890" height="535" alt="image" src="https://github.com/user-attachments/assets/a692c513-596e-46ff-a337-676630763af6" />
+
+
+---
+<h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/vendor-performance-analysis.git
+```
+3. Load the CSVs and ingest into database:
+```bash
+python scripts/ingestion_db.py
+```
+4. Create vendor summary table:
+```bash
+python scripts/get_vendor_summary.py
+```
+5. Open and run notebooks:
+   - `notebooks/exploratory_data_analysis.ipynb`
+   - `notebooks/vendor_performance_analysis.ipynb`
+6. Open Power BI Dashboard:
+   - `dashboard/vendor_performance_dashboard.pbix`
+
+---
+<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
+
+- Diversify vendor base to reduce risk
+- Optimize bulk order strategies
+- Reprice slow-moving, high-margin brands
+- Clear unsold inventory strategically
+- Improve marketing for underperforming vendors
+
+---
+<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
+
+**Rohit Gupta**  
+Data Analyst  
+📧 Email: rohitgupta12380@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/rohitgupta0079/)
