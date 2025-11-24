@@ -5,8 +5,8 @@
 [![SQL](https://img.shields.io/badge/SQL-Data%20Cleaning-orange)]()\
 [![Machine
 Learning](https://img.shields.io/badge/ML-Classification-green)]()\
-[![Status](https://img.shields.io/badge/Project%20Status-Completed-brightgreen)]()\
-[![License](https://img.shields.io/badge/License-MIT-red)]()
+[![Status](https://img.shields.io/badge/Project%20Status-Completed-brightgreen)]()
+
 
 ## 📊 **Project Goal**
 
@@ -15,15 +15,19 @@ project predicts which customers are most likely to leave. This project
 main goal is to create an entire ETL process in a database & a Power BI dashboard
 to utilize the Customer Data and acheive below goals:
 
--   **Analyze Customer Data at below levels** -> Demographic\Geographic\Payment & Account Info\Services
+
+-   **Analyze Customer Data** → Demographic,Geographic,Payment & Account Info,Services
+-   **Study Churner Profile & Identify Areas For Implementing Market Campaigns**
+-   **Identify a Method to Predict Future Churners**
+
+The goal is to help businesses identify churn drivers and take action to
+improve customer retention.
+    
+# 🛠️ **Methodology & Tech Stack**
 -   **SQL** → ETL, cleaning, transformation\
 -   **Power BI** → Interactive churn analysis dashboard\
 -   **Machine Learning** → Predictive churn model\Random Forest
 
-The goal is to help businesses identify churn drivers and take action to
-improve customer retention.
-
-## 🛠️ **Tech Stack**
 
   Component          Tools Used
   ------------------ ----------------------------------------
@@ -37,14 +41,49 @@ improve customer retention.
 ## 🗂️ **Dataset**
 
 Telecom Customer Churn dataset includes 
-Customer_Id,demographics:{Age,Gender,Married,State},Refferals & Services:{Number_of_Refferals,Tenure_in_Months,Value_Deal,Phone_service,Multiple_lines,Internet_Service,Internet_Type,Online_Security,Online_backup,Device_Priotection_Plan,
-Premium_Support,Streaming_TV,Streaming_Movies,Streaming_Music,Unlimited_Data,Contract,Paperless_Billing},Payment_&_Revenue_Related_Columns:{Payment_method,Monthly_Charge,Total_charges,Total_Refunds,Total_extra_Data_Charges,Total_Long_Distance_Charges,Total_Revenue},Customer_status_Columns:{Customer_Status,Churn_Category,Churn_Reason}.
+-  **Customer_Id**
+-  **Demographics & Geographics**
+- Age
+- Gender
+- Married
+- State
+-  **Refferals & Services**
+- Number_of_Refferals
+- Tenure_in_Months
+- Value_Deal
+- Phone_service
+- Multiple_lines
+- Internet_Service
+- Internet_Type
+- Online_Security
+- Online_backup
+- Device_Priotection_Plan
+- Premium_Support
+- Streaming_TV
+- Streaming_Movies
+- Streaming_Music
+- Unlimited_Data
+- Contract
+- Paperless_Billing
+-  **Payment_&_Revenue_Related_Columns**
+- Payment_method
+- Monthly_Charge
+- Total_charges
+- Total_Refunds
+- Total_extra_Data_Charges
+- Total_Long_Distance_Charges
+- Total_Revenue
+-  **Customer_status_Columns**
+- Customer_Status
+- Churn_Category
+- Churn_Reason
 
 ## 🔧 **Workflow**
 
-### **1️⃣ Data Preparation (SQL)**
+### **1️⃣ Data Preparation (SQL Server)**
+<img width="661" height="596" alt="image" src="https://github.com/user-attachments/assets/5721e381-f87c-417d-8ab0-dcbfbc0bf423" />
 
-Performed data cleaning, transformation, and feature engineering.
+Extraction of data, performing data cleaning, transformation, and feature engineering.
 
 ### **2️⃣ Exploratory Data Analysis**
 
@@ -57,17 +96,16 @@ patterns.
 
 ### **4️⃣ Machine Learning Model**
 
-Tested multiple models like Logistic Regression, Random Forest,
-SVM.
+Tested the machine learning model, i.e, Random Forest to predict future churners
 
 Example model scores (replace with your own):
 
   Metric      Score
   ----------- ---------
-  Accuracy    **82%**
-  Precision   **79%**
-  Recall      **74%**
-  F1 Score    **76%**
+  Accuracy    **85%**
+  Precision   **87%**
+  Recall      **94%**
+  F1 Score    **90%**
 
 ## 🧠 **Key Insights**
 
