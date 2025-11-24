@@ -8,14 +8,17 @@ Learning](https://img.shields.io/badge/ML-Classification-green)]()\
 [![Status](https://img.shields.io/badge/Project%20Status-Completed-brightgreen)]()\
 [![License](https://img.shields.io/badge/License-MIT-red)]()
 
-## 📊 **Project Overview**
+## 📊 **Project Goal**
 
 Telecom companies lose millions due to customer churn. This end-to-end
-project predicts which customers are most likely to leave, combining:
+project predicts which customers are most likely to leave. This project
+main goal is to create an entire ETL process in a database & a Power BI dashboard
+to utilize the Customer Data and acheive below goals:
 
--   **SQL** → Data extraction, cleaning, transformation\
+-   **Analyze Customer Data at below levels** -> Demographic\Geographic\Payment & Account Info\Services
+-   **SQL** → ETL, cleaning, transformation\
 -   **Power BI** → Interactive churn analysis dashboard\
--   **Machine Learning** → Predictive churn model
+-   **Machine Learning** → Predictive churn model\Random Forest
 
 The goal is to help businesses identify churn drivers and take action to
 improve customer retention.
@@ -24,7 +27,7 @@ improve customer retention.
 
   Component          Tools Used
   ------------------ ----------------------------------------
-  Data Cleaning      SQL
+  Data Cleaning      SQL Server
   Visualization      Power BI
   Machine Learning   Python (Pandas, Scikit-Learn, XGBoost)
   Notebook           Jupyter
@@ -33,8 +36,9 @@ improve customer retention.
 
 ## 🗂️ **Dataset**
 
-Telecom Customer Churn dataset includes demographics, services used,
-billing details, and churn label (Yes/No).
+Telecom Customer Churn dataset includes 
+Customer_Id,demographics:{Age,Gender,Married,State},Refferals & Services:{Number_of_Refferals,Tenure_in_Months,Value_Deal,Phone_service,Multiple_lines,Internet_Service,Internet_Type,Online_Security,Online_backup,Device_Priotection_Plan,
+Premium_Support,Streaming_TV,Streaming_Movies,Streaming_Music,Unlimited_Data,Contract,Paperless_Billing},Payment_&_Revenue_Related_Columns:{Payment_method,Monthly_Charge,Total_charges,Total_Refunds,Total_extra_Data_Charges,Total_Long_Distance_Charges,Total_Revenue},Customer_status_Columns:{Customer_Status,Churn_Category,Churn_Reason}.
 
 ## 🔧 **Workflow**
 
@@ -53,7 +57,7 @@ patterns.
 
 ### **4️⃣ Machine Learning Model**
 
-Tested multiple models like Logistic Regression, Random Forest, XGBoost,
+Tested multiple models like Logistic Regression, Random Forest,
 SVM.
 
 Example model scores (replace with your own):
