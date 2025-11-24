@@ -97,5 +97,7 @@ Example model scores (replace with your own):
 
 ## 📬 **Contact**
 
-**Rohit Gupta**\
-LinkedIn: *https://www.linkedin.com/in/rohitgupta0079/*
+**Rohit Gupta**
+Data Analyst  
+📧 Email: rohitgupta12380@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/rohitgupta0079/)
