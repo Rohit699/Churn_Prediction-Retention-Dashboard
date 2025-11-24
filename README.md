@@ -124,18 +124,16 @@ Example model scores (replace with your own):
 ## 📁 **Project Structure**
 
     📦 Telecom-Churn-Prediction
+    │── Dashboard/Churn_Analysis.pbix
+    │── Dataset/Prediction.csv
+    │── Notebook/Churn_Prediction.ipynb
     │── README.md
-    │── data/
-    │── sql/
-    │── powerbi/
-    │── machine_learning/
-    │── images/
 
 ## 🚀 **How to Run the Project**
 
 ### Install Dependencies
 
-    pip install pandas numpy scikit-learn seaborn matplotlib xgboost
+    pip install pandas numpy scikit-learn seaborn matplotlib 
 
 ## 📬 **Contact**
 
